@@ -1,0 +1,252 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: #FAFAFA;
+  overflow-x: hidden;
+}
+
+.contenido {
+  border-left: #fdf6f6 solid;
+  border-right: #fdf6f6 solid;
+  background-color: #fff;
+  width: 80%;
+  margin-left: 10%;
+}
+
+/*--------NAVEGADOR TOP------------------------------------*/
+
+#barra__top {
+  width: 100%;
+  background-color: #ecb920;
+  padding-bottom: 0.2%;
+  border-radius: 1%;
+}
+
+    .barra__top__descripcion {
+      display: inline-block;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+
+    .barra__top__red-social{
+      float: right;
+    }
+
+/*------------------HEADER --------------------------------------*/
+
+#barra__informacion{
+  width: 100%;
+  background-color: #d6b049;
+}
+
+    .barra__informacion__info {
+      text-align: center;
+    }
+    
+    .barra__informacion__info .titulo {
+      display: inline-block;
+      padding: 0% 1%;
+    }
+
+    .barra__informacion__info h1 {
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #C9302C;
+      font-size: 3em;
+      font-weight: bold;
+    }
+
+    .logo {
+      padding: 1% 0% 1% 2%;
+    }
+
+        .barra__informacion__info-logo-icono{
+          margin: 5% 0%;
+        }
+        
+            .barra__informacion__info-descripcion {
+              font-size: 1.5em;
+            }
+
+        .barra__informacion__info-logo-descripcion{
+          flex-direction: column;
+        }
+
+        .bajar {
+          padding: 0.5% 2% 0% 0%;
+        }
+
+  
+
+ /*----------------------------NAVEGADOR--------------------------*/    
+ #navegador {
+  width: 100%;
+  float:left;
+}
+#menu {
+  width: 100%;
+  border: 10% solid #b35f10;/*borde grosor 1px estilo solido y color #533839*/
+  background-color: #f8d769;/*fondo del menu*/
+  background-image: linear-gradient(#b35f10, #c7a63b);/*gradiente con los colores de arriba abajo*/
+  border-radius: 0.6em; /*borde de las esquinas para curvear*/
+  box-shadow: 0 0.1em 0.1em #c99c22;/*sombra de cada menú*/
+  zoom: 1;/*tamaño de letra para el menu*/
+  display: flex;/*caja flexible al nivel del contenedor*/
+}
+
+#menu:after {
+  clear: both;/*se pone debajo de caja de navegacion*/
+}
+
+    #menu ul {
+      opacity: 0;/*no es opaco*/
+      visibility: hidden;/*esconde la visibilidad de los items*/
+      position: absolute;/* El elemento se coloca en relación con su primer elemento antecesor posicionado (no estático) */
+      left: 0; /*distancia de la izquierda*/
+      z-index: 10;/*sobrepuesto*/
+      background: linear-gradient(#444, #b35f10);/*gradiente con los colores de arriba abajo */
+      transition: all .2s ease-in-out;/*tiempo que demora para aparecer los items*/
+    }
+    
+      
+        #menu li {
+          float: left;/*especifica si un elemento debe flotar a la izquierda <-- */
+          border-right: 0.1em solid #b35f10;/*borde de la derecha*/
+          box-shadow: 0.1em 0 0 #444;/*sombra de cada item*/
+          position: relative;/*elemento se coloca en relación con su posición normal*/
+          width: 100%; /*ocupa todo la caja li*/
+        }
+
+            #menu a {
+              float: left; /*especifica si un elemento debe flotar a la izquierda <--*/
+              padding: auto 17%;/*dimensiones del contendido al borde*/
+              /*padding: 12px 20px;*/
+              /*color: #aaaaaa;/*color de letra*/
+              color: #fff;
+              font: 145% Arial, Helvetica;/*estilo de letra*/
+              text-align: center;
+              text-decoration: none;/*quita la linea de decoracion */
+              text-shadow: 0 0.12em 0 #000;/*sombra del texto*/
+              font-weight: bold;/*pone en negrita la letras*/ 
+              width: 100%;
+            }
+
+                #menu ul li:last-child {/*selector coincide con cada elemento que es el último li de su #menu ul*/
+                  box-shadow: none;/*quita la sombra*/
+                }
+                
+                    #menu li:hover > ul { /*selecciona elementos cuando pasa el mouse para todo ul que es padre de li:hover*/
+                      opacity: 1; /*opacidad total ya que es de 0 a 1*/
+                      visibility: visible;/* se mantiene visible */
+                      margin: 0;/* no tiene margen */
+                    }
+
+                    #menu .subitem {
+                      text-align: justify;
+                    }
+
+                        #menu ul a:hover, #menu ul a:focus{
+                          background-color: #C9302C; /*color de fondo*/
+                        }   
+
+/*------------ CARRUSEL ------------------------------------------------*/
+#baner {
+  width: 100%;
+}
+
+/*-------------------CONTENIDO ----------------------------------------------*/
+
+
+.sobre_merly__contenido {
+  padding: 3% 3% 0% 3%;/*margen*/
+  overflow: auto;/*no deja que el contenido desborde a su contenedor*/
+  text-align: justify;/*texto justificado*/
+}
+
+    .sobre_merly__contenido__titulo {
+      color: orange;
+      font-size: 2em solid;
+    }
+
+    .sobre_merly__contenido img {
+      float: right;/*se posiciona a la derecha*/
+          margin: 0em 0.5em 2em 2em;/*margen*/
+          border: 0.4em solid;/*grosor del borde*/
+          border-color: #c3bebb;/*color de borde*/
+          border-radius: 1em / 0.5em;/*borde*/
+          -webkit-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);/*sombra*/
+        -moz-box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+        box-shadow: 12px 17px 5px 0px rgba(0,0,0,0.75);
+    }
+
+    .sobre_merly__contenido p {
+      color: #000;
+      font-size: 1.6em;
+    }
+
+#izquierda img {
+  float: left;
+  margin: 0em 2em 0em 0em;/*margen*/
+  padding: none;
+}
+
+ul .cuadrado{
+  list-style: square;
+  font-size: 1.6em;
+} 
+
+ul .circulo{
+  list-style: circle;
+  font-size: 1.6em;
+}
+
+ol {
+  font-size: 1.6em;
+}
+
+/*-------------------- FOOTER ----------------------------------------*/
+
+#referencia {
+  display:flex;
+  width: 100%;
+  background-color:#d6b049;/*color de fondo*/
+  color: #000000;/*color de letra*/
+  border-top: solid #ffffff 2px;/*borde de arriba*/
+  margin: 1% 0%;
+  padding: 0.5% 0%;
+}
+
+    #referencia__titulo {
+      width: 100%; /*contenido al 100% dentro del contenedor*/
+      padding-bottom: 1%;/* espacio de abajo */
+      text-align: center; /*texto centrado*/
+      color: #ffffff;/*color de texto*/
+      font: 3em Arial, Helvetica;/* tamaño de letra y etilo de letra */
+    }
+
+    .referencia__texto { 
+      font: 1.5em Arial, Helvetica; /* tamaño de letra y etilo de letra */
+    }
+
+        .referencia__texto ul {
+          padding: 0% 3%;
+          list-style: none; /*no tiene propiedad de lista por el none*/
+        }
+
+            .referencia__texto ul > li {
+              padding: 1.5% 0%;
+              border-bottom: dashed #ffffff 1px;/*borde de abajo*/
+            }
+
+                .referencia__texto a {
+                  color: #d6b049; /* color de texto */
+                }
+
+    #referencia__autor {
+      width: 100%;
+      text-align: center;
+      font-size: 150%;
+    } 
