@@ -21,7 +21,7 @@ body {
 
 #barra__top {
   width: 100%;
-  background-color: #ecb920;
+  background-color: #2035ee;
   padding-bottom: 0.2%;
   border-radius: 1%;
 }
@@ -40,7 +40,7 @@ body {
 
 #barra__informacion{
   width: 100%;
-  background-color: #d6b049;
+  background-color: #4396ca;
 }
 
     .barra__informacion__info {
@@ -54,7 +54,7 @@ body {
 
     .barra__informacion__info h1 {
       font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      color: #C9302C;
+      color: #fe0e06;
       font-size: 3em;
       font-weight: bold;
     }
@@ -88,11 +88,11 @@ body {
 }
 #menu {
   width: 100%;
-  border: 10% solid #b35f10;/*borde grosor 1px estilo solido y color #533839*/
-  background-color: #f8d769;/*fondo del menu*/
-  background-image: linear-gradient(#b35f10, #c7a63b);/*gradiente con los colores de arriba abajo*/
+  border: 10% solid #1a075e;/*borde grosor 1px estilo solido y color #533839*/
+  background-color: #2a42d9;/*fondo del menu*/
+  background-image: linear-gradient(#1031b3, #2766bf);/*gradiente con los colores de arriba abajo*/
   border-radius: 0.6em; /*borde de las esquinas para curvear*/
-  box-shadow: 0 0.1em 0.1em #c99c22;/*sombra de cada menú*/
+  box-shadow: 0 0.1em 0.1em #1a22ae;/*sombra de cada menú*/
   zoom: 1;/*tamaño de letra para el menu*/
   display: flex;/*caja flexible al nivel del contenedor*/
 }
@@ -107,14 +107,14 @@ body {
       position: absolute;/* El elemento se coloca en relación con su primer elemento antecesor posicionado (no estático) */
       left: 0; /*distancia de la izquierda*/
       z-index: 10;/*sobrepuesto*/
-      background: linear-gradient(#444, #b35f10);/*gradiente con los colores de arriba abajo */
+      background: linear-gradient(#444, #2766bf);/*gradiente con los colores de arriba abajo */
       transition: all .2s ease-in-out;/*tiempo que demora para aparecer los items*/
     }
     
       
         #menu li {
           float: left;/*especifica si un elemento debe flotar a la izquierda <-- */
-          border-right: 0.1em solid #b35f10;/*borde de la derecha*/
+          border-right: 0.1em solid #2766bf;/*borde de la derecha*/
           box-shadow: 0.1em 0 0 #444;/*sombra de cada item*/
           position: relative;/*elemento se coloca en relación con su posición normal*/
           width: 100%; /*ocupa todo la caja li*/
@@ -149,7 +149,7 @@ body {
                     }
 
                         #menu ul a:hover, #menu ul a:focus{
-                          background-color: #C9302C; /*color de fondo*/
+                          background-color: #ff0f07; /*color de fondo*/
                         }   
 
 /*------------ CARRUSEL ------------------------------------------------*/
@@ -212,7 +212,7 @@ ol {
 #referencia {
   display:flex;
   width: 100%;
-  background-color:#d6b049;/*color de fondo*/
+  background-color:#4396ca;/*color de fondo*/
   color: #000000;/*color de letra*/
   border-top: solid #ffffff 2px;/*borde de arriba*/
   margin: 1% 0%;
@@ -242,7 +242,7 @@ ol {
             }
 
                 .referencia__texto a {
-                  color: #d6b049; /* color de texto */
+                  color: #4396ca; /* color de texto */
                 }
 
     #referencia__autor {
