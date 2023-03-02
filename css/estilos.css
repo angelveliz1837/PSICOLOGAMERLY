@@ -28,8 +28,10 @@ body {
 
     .barra__top__descripcion {
       display: inline-block;
-      font-size: 1.5em;
+      font-size: 1.8em;
       font-weight: bold;
+      font-family: 'Leckerli One', cursive;
+      color: #c4baba
     }
 
     .barra__top__red-social{
@@ -40,7 +42,7 @@ body {
 
 #barra__informacion{
   width: 100%;
-  background-color: #4396ca;
+  background-color: #2E73B4;
 }
 
     .barra__informacion__info {
